@@ -1,0 +1,81 @@
+
+		  body {
+            margin: 0 auto;
+            background-color: aliceblue;
+           
+        }
+
+        header {
+            position: relative;
+        }
+
+        .shopping-mall {
+            position: absolute;
+            bottom: 20px;
+            font-variant: small-caps;
+        }
+
+        nav {
+            background-color: chartreuse;
+        }
+        .container{
+            border: 2px solid black;
+        }
+        .container>div>article {
+            border: 2px ;
+        }
+
+        .container>div>* {
+            min-height: 300px;
+        }
+
+        footer {
+            background: orange;
+            padding: 40px;
+        }
+
+        .shopping-mall>h1 {
+            font-family: Impact;
+            font-size: 50px;
+            color: white;
+            letter-spacing: 0.3px;
+            text-shadow: 0 0 2px black;
+            padding-bottom: 0px;
+            margin: 0px;
+        }
+        .shopping-mall>h5{
+            margin-top: 5px;
+            letter-spacing: 0.5px;
+        }
+        .van-card{
+            margin-top: 5px;
+        }
+        .van-card>.card>.card-body>ul{
+            padding:0px;
+            margin: 0px;
+            list-style: none;
+            font-variant: small-caps;
+        }
+        .van-card>.card>.card-body{
+          display: flex;
+          flex-wrap: nowrap;
+        }
+        .van-card>.card>.card-body>ul>li>a{
+            text-decoration: none;
+        }
+        .card>.card-body>.card-header>strong{
+            font-variant: small-caps;
+            font-size: larger;
+            text-shadow: 0 0 2px darkgray;
+        }
+        .my-prod{
+            text-align: center;
+            padding: 5px;
+        }
+        .my-prod >.cardParent>.card{
+            margin: 0px;
+        }
+        .my-prod>.cardParent>.card>.card-body> img{
+            height: 150px;
+            max-width: 95%;
+        }
