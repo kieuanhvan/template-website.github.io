@@ -34,6 +34,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- js -->
 <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 <!-- //js -->
+
+<style>
+
+#navbar4 {
+  overflow: hidden;
+ z-index:100000;
+}
+.sticky4 {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+</style>
 <!-- banner-bottom-plugin -->
 <link href="css/owl.carousel.css" rel="stylesheet" type="text/css" media="all">
 <script src="js/owl.carousel.js"></script>
@@ -146,7 +160,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</script>
 <!-- //bootstrap-pop-up -->
 <!-- nav -->
-	<div class="movies_nav">
+	<div class="movies_nav" id="navbar4">
 		<div class="container">
 			<nav class="navbar navbar-default">
 				<div class="navbar-header navbar-left">
@@ -243,6 +257,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</nav>	
 		</div>
 	</div>
+
+
 <!-- //nav -->
 <!-- banner -->
 	<div id="slidey" style="display:none;">
@@ -1732,5 +1748,23 @@ $(document).ready(function(){
 			});
 	</script>
 <!-- //here ends scrolling icon -->
+
+
+<script>
+	window.onscroll = function() {myFunction()};
+	
+	var navbar = document.getElementById("navbar4");
+	var sticky = navbar.offsetTop;
+	
+	function myFunction() {
+	  if (window.pageYOffset >= sticky) {
+		navbar.classList.add("sticky4")
+	  } else {
+		navbar.classList.remove("sticky4");
+	  }
+	}
+	</script>
+
+
 </body>
 </html>
